@@ -38,7 +38,6 @@ function Button({ children, onClick, type, color, border, size, shape }) {
     if (!isRipple) setCoords({ x: -1, y: -1 });
   }, [isRipple]);
 
-  console.log(coords);
 
   return (
     <button
