@@ -1,7 +1,8 @@
 {
-  "name": "button-component",
+  "name": "robot-button",
   "version": "1.0.0",
   "description": "",
+  "private": "false",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
