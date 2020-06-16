@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+.App {
+  font-family: sans-serif;
+  display: flex;
+  text-align: space-around;
+}
+
+.container {
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+:root {
+  --primary: #003b5c;
+  --warning: #ffc300;
+  --success: #daf7a6;
+  --danger: #c70039;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.btn {
+  font-family: Orbitron;
+  cursor: pointer;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  letter-spacing: 2px;
+  outline: none;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+.btn:active {
+  background-color: var(--primary);
+}
+
+/* type of button */
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.warning {
+  background-color: var(--warning);
+  color: var(--black);
+}
+.success {
+  background-color: var(--success);
+  color: var(--black);
+}
+.danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.primary-outline {
+  color: var(--primary);
+  border: 1px solid var(--primary) !important;
+  background-color: #ffffff;
+}
+.primary-outline:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.success-outline {
+  color: var(--success);
+  border: 1px solid var(--success) !important;
+  background-color: #ffffff;
+}
+.success-outline:hover {
+  background-color: var(--success);
+  color: var(--white);
+}
+.warning-outline {
+  color: var(--warning);
+  border: 1px solid var(--warning) !important;
+  background-color: #ffffff;
+}
+.warning-outline:hover {
+  background-color: var(--warning);
+  color: var(--white);
+}
+.danger-outline {
+  color: var(--danger);
+  border: 1px solid var(--danger) !important;
+  background-color: #ffffff;
+}
+.danger-outline:hover {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+/* border props */
+.solid {
+  border: none;
+  box-shadow: 2px 1px 4px -1px rgba(0, 0, 0, 0.1);
+}
+.outline {
+  border: 0.2px solid grey;
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* size props */
+.small {
+  height: 20px;
+  font-size: 10px;
+}
+.medium {
+  height: 30px;
+  min-height: 30px;
+
+  font-size: 12px;
+}
+
+.large {
+  height: 45px;
+  font-size: larger;
+}
+
+/* shape props */
+.block {
+  border-radius: 9px;
+}
+
+.bullet {
+  border-radius: 16px;
+}
+
+.box {
+  border-radius: 6px;
+}
